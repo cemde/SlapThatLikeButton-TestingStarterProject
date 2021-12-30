@@ -1,5 +1,5 @@
 import enum
-#from utils.data import sausage
+from utils.data import sausage
 
 class LikeState(enum.Enum):
     empty = enum.auto()
