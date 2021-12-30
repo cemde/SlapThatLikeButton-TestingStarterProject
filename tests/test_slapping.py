@@ -1,6 +1,6 @@
 import pytest
 from slapping.slap_that_like_button import LikeState, slap_many
-
+from slapping import slap_sleep
 
 def test_empty_slap():
     assert slap_many(LikeState.empty, '') is LikeState.empty
@@ -48,6 +48,10 @@ def test_db_slap(db_conn):
 def test_print(capture_stdout):
     print("hello")
     assert capture_stdout["stdout"] == "hello\n"
+
+def test_sausage():
+    assert slap_sleep(3) == 12
+
 
 # def test_many_slaps():
 #     assert slap_many(LikeState.empty, 'll') is LikeState.empty

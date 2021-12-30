@@ -1,5 +1,5 @@
 import enum
-
+from utils.data import sausage
 
 class LikeState(enum.Enum):
     empty = enum.auto()
@@ -38,3 +38,6 @@ def slap_many(s: LikeState, slaps: str) -> LikeState:
         else:
             raise ValueError('invalid slap')
     return s
+
+def slap_sleep(x: int) -> int:
+    return 2*sausage(x)
