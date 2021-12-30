@@ -49,8 +49,8 @@ def test_print(capture_stdout):
     print("hello")
     assert capture_stdout["stdout"] == "hello\n"
 
-def test_sausage():
-    assert slap_sleep(3) == 12
+#def test_sausage():
+#    assert slap_sleep(3) == 12
 
 
 # def test_many_slaps():
