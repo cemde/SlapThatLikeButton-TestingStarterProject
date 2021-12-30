@@ -1,6 +1,6 @@
 import pytest
 from slapping.slap_that_like_button import LikeState, slap_many
-from slapping import slap_sleep
+#from slapping import slap_sleep
 
 def test_empty_slap():
     assert slap_many(LikeState.empty, '') is LikeState.empty
