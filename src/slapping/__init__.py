@@ -1,1 +1,2 @@
 from slap_that_like_button import slap_sleep
+import slap_that_like_button
