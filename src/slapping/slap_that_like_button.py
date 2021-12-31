@@ -1,5 +1,5 @@
 import enum
-from slapping.utils.data import sausage
+from src.slapping.utils.data import sausage
 
 class LikeState(enum.Enum):
     empty = enum.auto()
